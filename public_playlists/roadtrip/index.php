@@ -1,4 +1,6 @@
-<?
+<?php
+  mkdir("tracks");
+  shell_exec("cp _tracks/bonnet.mp3 tracks");
   shell_exec("chmod 777 . -R");
 ?>
 <!DOCTYPE html>
