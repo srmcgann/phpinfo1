@@ -452,7 +452,7 @@
         (el = document.querySelectorAll('.playerFrame')[0])
         preloadNext()
         postMessage(JSON.stringify({'userInteracted': userInteracted}))
-        el.src = 'https://audioplayer.dweet.net/' + window.location.href + tracks[idx] + (userInteracted ? '?autoplay' : '')
+        el.src = 'https://audioplayer.herokuapp.com/' + window.location.href + tracks[idx] + (userInteracted ? '?autoplay' : '')
       }
       
       curIDX = 0
@@ -480,8 +480,8 @@
       postMessage=msg=>{
         let el
         (el = document.querySelectorAll('.playerFrame')[0])
-        if(el.src.indexOf('https://audioplayer.dweet.net') != -1){
-          el.contentWindow.postMessage(msg, 'https://audioplayer.dweet.net')
+        if(el.src.indexOf('https://audioplayer.herokuapp.com/') != -1){
+          el.contentWindow.postMessage(msg, 'https://audioplayer.herokuapp.com/')
         }
       }
       window.addEventListener('message', e => {

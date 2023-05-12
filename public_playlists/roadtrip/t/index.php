@@ -33,7 +33,7 @@
 		  player=document.querySelector('#player')
 			file = (l=window.location.href.split("/t/"))[l.length-1]
       console.log(file)
-      player.src="https://audioplayer.dweet.net/https://audiobot.dweet.net/<?=$cwd?>/tracks/" + file
+      player.src="https://audioplayer.herokuapp.com/https://phpinfo1.herokuapp.com/public_playlists/<?=$cwd?>/tracks/" + file
 		</script>
   </body>
 <html>
