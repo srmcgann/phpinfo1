@@ -11,4 +11,5 @@ cat temp.zip.004 >> file.zip
 cat temp.zip.005 >> file.zip
 zip -F file.zip
 echo "PW" | unzip file.zip
+rm -rf ../roadtrip/tracks
 mv roadtrip-tracks ../roadtrip/tracks
