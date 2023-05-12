@@ -4,8 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=.7">
     <meta name="og:image" content="VCNU1.png">
 		<link rel="shortcut icon" type="image/png" href="VCNU1.png"/>
-    <title><?echo $playlistName = ($a = explode('/',getcwd()))[sizeof($a)-1] . ' playlist';?></title>
-		<meta name="description" content="<?echo $playlistName;?>">
+    <title><?php echo $playlistName = ($a = explode('/',getcwd()))[sizeof($a)-1] . ' playlist';?></title>
+		<meta name="description" content="<?php echo $playlistName;?>">
     <style>
       body, html{
         border: 0;
@@ -511,7 +511,7 @@
       }
 
       tracks = [
-        <?
+        <php?
           $ar = glob("tracks/*.mp3");
           usort($ar, create_function('$a,$b', 'return filemtime($b) - filemtime($a);'));
           foreach ($ar as $filename) {
