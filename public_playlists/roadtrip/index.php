@@ -511,7 +511,7 @@
       }
 
       tracks = [
-        <php?
+        <?php
           $ar = glob("tracks/*.mp3");
           usort($ar, create_function('$a,$b', 'return filemtime($b) - filemtime($a);'));
           foreach ($ar as $filename) {
